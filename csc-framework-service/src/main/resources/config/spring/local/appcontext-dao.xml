@@ -2,15 +2,13 @@
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-<!--
-    <bean id="DemoDao" parent="parentDao">
-        <property name="proxyInterfaces" value="com.dianping.DemoDao"/>
+    <bean id="demoDao" parent="parentDao">
+        <property name="proxyInterfaces" value="com.dianping.demo.dao.DemoDao"/>
         <property name="target">
             <bean parent="daoRealizeTarget">
                 <constructor-arg value="Demo"/>
             </bean>
         </property>
     </bean>
--->
 
 </beans>
