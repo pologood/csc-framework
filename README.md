@@ -1,6 +1,8 @@
 csc-framework:提供pegion project的framework，自定义的业务pegion 项目可以基于本项目创建
 
-# 准备工作
+# 新项目创建
+
+  * code上新建项目的时候基于http://code.dianpingoa.com/ba-csc/csc-framework.git创建，clone到本地
   
   * 全局搜索文件替换csc-framework 为csc-xxx
   
