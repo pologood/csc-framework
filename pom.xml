@@ -15,8 +15,8 @@
 
     <properties>
         <spring.version>4.1.1.RELEASE</spring.version>
-        <freemarker.version>2.3.20</freemarker.version>
         <junit.version>4.11</junit.version>
+        <powermock.version>1.5.1</powermock.version>
         <env>qa</env>
     </properties>
 
@@ -83,16 +83,6 @@
         </dependency>
         <!-- 通用框架开结束-->
 
-
-        <!-- freemarker视图开始-->
-        <dependency>
-            <groupId>org.freemarker</groupId>
-            <artifactId>freemarker</artifactId>
-            <version>${freemarker.version}</version>
-        </dependency>
-        <!-- freemarker视图开始-->
-
-
         <!-- 添加 Spring 的架构开始-->
         <dependency>
             <groupId>org.springframework</groupId>
@@ -132,13 +122,30 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-        <!-- 测试框架结束-->
-
-
         <dependency>
-            <groupId>com.dianping</groupId>
-            <artifactId>csc-telephone-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-api-mockito</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4-rule-agent</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.powermock</groupId>
+            <artifactId>powermock-module-junit4</artifactId>
+            <version>${powermock.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- 测试框架结束-->
     </dependencies>
 </project>
