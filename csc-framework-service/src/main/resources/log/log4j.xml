@@ -26,7 +26,7 @@
 
     <!-- Root Logger -->
     <root>
-        <level value="error"/>
+        <level value="debug"/>
         <appender-ref ref="console"/>
         <appender-ref ref="catAppender"/>
     </root>
