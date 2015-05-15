@@ -1,0 +1,144 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.dianping</groupId>
+    <artifactId>csc-framework</artifactId>
+    <packaging>pom</packaging>
+    <name>csc-framework</name>
+    <version>0.0.1</version>
+    <modules>
+        <module>csc-framework-service</module>
+        <module>csc-framework-api</module>
+    </modules>
+
+
+    <properties>
+        <spring.version>4.1.1.RELEASE</spring.version>
+        <freemarker.version>2.3.20</freemarker.version>
+        <junit.version>4.11</junit.version>
+        <env>qa</env>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.dianping</groupId>
+            <artifactId>csc-common-util</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+
+
+        <!-- 记录日志框架开始 -->
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.6.6</version>
+        </dependency>
+        <!--记录日志框架结束-->
+
+        <!-- dianping 框架开始 -->
+        <dependency>
+            <groupId>com.dianping.platform</groupId>
+            <artifactId>platform-sdk</artifactId>
+            <version>1.1.7</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>jcl-over-slf4j</artifactId>
+                </exclusion>
+
+            </exclusions>
+        </dependency>
+
+        <!--点评框架结束-->
+
+
+        <!-- 通用框架开始 -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-lang</groupId>
+            <artifactId>commons-lang</artifactId>
+            <version>2.6</version>
+        </dependency>
+        <!-- 通用框架开结束-->
+
+
+        <!-- freemarker视图开始-->
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>${freemarker.version}</version>
+        </dependency>
+        <!-- freemarker视图开始-->
+
+
+        <!-- 添加 Spring 的架构开始-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- 添加 Spring 的架构结束-->
+
+        <!-- 测试框架开始-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- 测试框架结束-->
+
+
+        <dependency>
+            <groupId>com.dianping</groupId>
+            <artifactId>csc-telephone-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+</project>
