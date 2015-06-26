@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="People">
+
+    <insert id="insert">
+        INSERT INTO PEOPLE
+        (
+        AddTime,
+        NAME,
+        SEX,
+        memo
+        )
+        VALUES
+        (
+        now(),
+        #e.name#,
+        #e.sex#,
+        #e.memo#
+        );
+        <selectKey resultClass="java.lang.Integer" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+
+    </insert>
+
+    <delete id="delete">
+        DELETE  FROM PEOPLE
+        WHERE Id = #id#;
+    </delete>
+
+
+    <select id="get" resultClass="com.dianping.demo.entity.PeopleEntity">
+        SELECT * FROM PEOPLE
+        WHERE Id = #id#;
+    </select>
+
+
+    <update id="update">
+        UPDATE  PEOPLE
+        SET
+        NAME = #e.name#,
+        SEX = #e.sex#,
+        memo = #e.memo#
+        WHERE Id = #id#;
+    </update>
+
+</sqlMap>
