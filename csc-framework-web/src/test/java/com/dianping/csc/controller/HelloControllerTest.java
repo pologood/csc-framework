@@ -1,5 +1,6 @@
 package com.dianping.csc.controller;
 
+import com.dianping.csc.common.web.BaseTest;
 import org.junit.Test;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
