@@ -34,10 +34,27 @@
             <scope>test</scope>
         </dependency>
         <!-- Test结束-->
+
+        <dependency>
+            <groupId>com.dianping</groupId>
+            <artifactId>dp-common-web</artifactId>
+            <version>0.4.13</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.freemarker</groupId>
+                    <artifactId>freemarker</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+
+
+
     </dependencies>
 
     <build>
-        <finalName>csc-common-web</finalName>
+        <finalName>csc-framework-web</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
