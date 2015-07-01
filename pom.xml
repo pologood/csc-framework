@@ -10,6 +10,7 @@
     <modules>
         <module>csc-framework-service</module>
         <module>csc-framework-api</module>
+        <module>csc-framework-web</module>
     </modules>
 
 </project>

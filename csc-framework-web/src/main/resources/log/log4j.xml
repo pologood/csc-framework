@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//LOGGER" "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+
+    <appender name="catAppender" class="com.dianping.cat.log4j.CatAppender"></appender>
+
+    <!-- Appenders -->
+    <appender name="console" class="org.apache.log4j.ConsoleAppender">
+        <param name="Target" value="System.out"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} | %p [%t] %c{1}.%M(%L) | %m%n"/>
+        </layout>
+    </appender>
+
+
+
+    <!--记录hello INFO级别以下的appender-->
+    <appender name="helloInfo" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/applogs/csc-common-web/logs/helloInfo.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} | %p [%t] %c{1}.%M(%L) | %m%n"/>
+        </layout>
+
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="INFO"/>
+        </filter>
+    </appender>
+
+    <!--记录hello ERROR级别以下的appender-->
+    <appender name="helloError" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="/data/applogs/csc-common-web/logs/helloError.log"/>
+
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss} | %p [%t] %c{1}.%M(%L) | %m%n"/>
+        </layout>
+        <filter class="org.apache.log4j.varia.LevelRangeFilter">
+            <param name="LevelMin" value="ERROR"/>
+        </filter>
+
+    </appender>
+
+
+    <!-- hello Info 输出 -->
+    <logger name="com.dianping.csc.service.HelloService" additivity="true">
+        <level value="DEBUG"/>
+        <appender-ref ref="helloError"/>
+        <appender-ref ref="helloInfo"/>
+        <appender-ref ref="console"/>
+    </logger>
+
+    <!-- Root Logger -->
+    <root>
+        <level value="error"/>
+        <appender-ref ref="console"/>
+        <appender-ref ref="catAppender"/>
+    </root>
+
+</log4j:configuration>
+
