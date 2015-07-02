@@ -47,7 +47,11 @@
             </exclusions>
         </dependency>
 
-
+        <dependency>
+            <groupId>com.dianping.neocortex</groupId>
+            <artifactId>neocortex-4j</artifactId>
+            <version>0.3.4</version>
+        </dependency>
 
 
 
