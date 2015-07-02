@@ -10,7 +10,8 @@
     <script src="<@cortex.staticResource resource="/hls/hippo3.js"/>"></script>
     <script id="nugget" src="<@cortex.staticResource resource="/s/j/app/main/nugget-zepto-client.js"/>"></script>
 </head>
-<a href="xxx">测试</a>
+<a href="#">测试</a>
+
 <body>
 
 

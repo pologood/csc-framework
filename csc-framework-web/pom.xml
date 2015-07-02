@@ -17,7 +17,7 @@
         <dependency>
             <groupId>com.dianping</groupId>
             <artifactId>csc-common-web</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.2-SNAPSHOT</version>
         </dependency>
 
         <!-- Test开始-->
@@ -34,25 +34,6 @@
             <scope>test</scope>
         </dependency>
         <!-- Test结束-->
-
-        <dependency>
-            <groupId>com.dianping</groupId>
-            <artifactId>dp-common-web</artifactId>
-            <version>0.4.13</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.freemarker</groupId>
-                    <artifactId>freemarker</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>com.dianping.neocortex</groupId>
-            <artifactId>neocortex-4j</artifactId>
-            <version>0.3.4</version>
-        </dependency>
-
 
 
     </dependencies>
