@@ -10,15 +10,7 @@
     <packaging>war</packaging>
     <name>csc-framework-service</name>
 
-    <parent>
-        <groupId>com.dianping</groupId>
-        <artifactId>csc-framework</artifactId>
-        <version>0.0.1</version>
-    </parent>
-
     <properties>
-        <spring.version>4.1.1.RELEASE</spring.version>
-        <junit.version>4.11</junit.version>
         <env>qa</env>
     </properties>
 
@@ -29,28 +21,13 @@
             <artifactId>csc-framework-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-
+        <!--只需要引入这一个jar包即可-->
         <dependency>
             <groupId>com.dianping</groupId>
             <artifactId>csc-common-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.1</version>
         </dependency>
-
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-        </dependency>
-
     </dependencies>
-
 
     <build>
         <plugins>

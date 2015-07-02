@@ -8,8 +8,6 @@
     <name>csc-framework-web</name>
 
     <properties>
-        <spring.version>4.1.2.RELEASE</spring.version>
-        <junit.version>4.11</junit.version>
         <env>qa</env>
     </properties>
 
@@ -18,42 +16,12 @@
         <dependency>
             <groupId>com.dianping</groupId>
             <artifactId>csc-common-web</artifactId>
-            <version>0.0.4</version>
+            <version>0.0.5</version>
         </dependency>
-
-        <!-- Test开始-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-test</artifactId>
-            <version>${spring.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>${junit.version}</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.tomcat</groupId>
-            <artifactId>tomcat-servlet-api</artifactId>
-            <version>7.0.54</version>
-            <scope>test</scope>
-        </dependency>
-
     </dependencies>
 
     <build>
-        <finalName>csc-framework-web</finalName>
         <plugins>
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
-                </configuration>
-            </plugin>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.1</version>
