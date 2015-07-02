@@ -1,5 +1,6 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
+    <#--获取CDN文件内容-->
 <#assign cortex=JspTaglibs["http://www.dianping.com/neocortex"]>
     <script>
         var _hip = [
