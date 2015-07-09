@@ -7,6 +7,8 @@
 <body>
 
 
-<h1>${greeting}</h1>
+<h1>${greeting}</h1><br/>
+<h1>${pigeonTest}</h1><br/>
+
 </body>
 </html>

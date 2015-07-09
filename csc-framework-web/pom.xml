@@ -18,6 +18,12 @@
             <artifactId>csc-common-web</artifactId>
             <version>0.0.7</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.dianping</groupId>
+            <artifactId>csc-telephone-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

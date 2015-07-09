@@ -12,7 +12,6 @@ import org.springframework.stereotype.Service;
 public class HelloServiceImpl implements HelloService {
     private static final Logger LOG = Logger.getLogger(HelloService.class);
 
-    @Override
     public String greeting(String name) {
         LOG.info("name = " + name);
         LOG.error("name = " + name);
