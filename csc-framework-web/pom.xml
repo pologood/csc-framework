@@ -16,7 +16,7 @@
         <dependency>
             <groupId>com.dianping</groupId>
             <artifactId>csc-common-web</artifactId>
-            <version>0.0.6</version>
+            <version>0.0.7</version>
         </dependency>
     </dependencies>
 
