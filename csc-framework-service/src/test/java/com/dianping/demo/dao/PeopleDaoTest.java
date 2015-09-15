@@ -17,7 +17,7 @@ public class PeopleDaoTest extends DAOTest {
     PeopleEntity peopleEntity;
 
     @Override
-    protected void init(DAO dao, Entity entity) {
+    protected void init() {
         peopleEntity = new PeopleEntity("yuchao", "男", 42);
         set(peopleDao, peopleEntity);
     }
