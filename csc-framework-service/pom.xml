@@ -25,8 +25,15 @@
         <dependency>
             <groupId>com.dianping</groupId>
             <artifactId>csc-common-service</artifactId>
-            <version>0.0.4</version>
+            <version>1.1.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.20</version>
+        </dependency>
+
     </dependencies>
 
     <build>
