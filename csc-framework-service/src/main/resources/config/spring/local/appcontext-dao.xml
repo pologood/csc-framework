@@ -10,12 +10,4 @@
             </bean>
         </property>
     </bean>
-    <bean id="testEntityDAO" parent="parentDao">
-        <property name="proxyInterfaces" value="com.dianping.demo.dao.TestEntityDAO"/>
-        <property name="target">
-            <bean parent="daoRealizeTarget">
-                <constructor-arg value="TestEntity"/>
-            </bean>
-        </property>
-    </bean>
 </beans>
