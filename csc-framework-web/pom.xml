@@ -9,6 +9,7 @@
 
     <properties>
         <env>qa</env>
+        <csc-common-web.version>2.0.0</csc-common-web.version>
     </properties>
 
     <dependencies>
@@ -16,13 +17,7 @@
         <dependency>
             <groupId>com.dianping</groupId>
             <artifactId>csc-common-web</artifactId>
-            <version>1.1.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.dianping</groupId>
-            <artifactId>csc-telephone-api</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>${csc-common-web.version}</version>
         </dependency>
     </dependencies>
 
