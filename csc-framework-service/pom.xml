@@ -12,8 +12,7 @@
 
     <properties>
         <env>qa</env>
-        <csc-common-service.version>2.0.2</csc-common-service.version>
-        <csc-common-web.version>2.0.0</csc-common-web.version>
+        <csc-common-service.version>2.1.1</csc-common-service.version>
     </properties>
 
     <dependencies>
@@ -29,11 +28,7 @@
             <artifactId>csc-common-service</artifactId>
             <version>${csc-common-service.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.dianping</groupId>
-            <artifactId>csc-common-web</artifactId>
-            <version>${csc-common-web.version}</version>
-        </dependency>
+
     </dependencies>
 
     <build>
