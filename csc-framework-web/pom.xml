@@ -9,7 +9,7 @@
 
     <properties>
         <env>qa</env>
-        <csc-common-web.version>2.0.0</csc-common-web.version>
+        <csc-common-web.version>2.0.2</csc-common-web.version>
     </properties>
 
     <dependencies>
