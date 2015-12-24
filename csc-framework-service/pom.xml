@@ -12,7 +12,7 @@
 
     <properties>
         <env>qa</env>
-        <csc-common-service.version>2.1.1</csc-common-service.version>
+        <csc-common-service.version>2.2.1</csc-common-service.version>
     </properties>
 
     <dependencies>
@@ -22,6 +22,7 @@
             <artifactId>csc-framework-api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+
         <!--只需要引入这一个jar包即可-->
         <dependency>
             <groupId>com.dianping</groupId>
