@@ -1,7 +1,7 @@
-package com.dianping.demo.dao;
+package com.sankuai.demo.dao;
 
 import com.dianping.csc.common.service.util.SpringBaseWithCustomizeRunnerTest;
-import com.dianping.demo.entity.PeopleEntity;
+import com.sankuai.demo.entity.PeopleEntity;
 import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.test.annotation.Rollback;

@@ -29,7 +29,7 @@
     </delete>
 
 
-    <select id="get" resultClass="com.dianping.demo.entity.PeopleEntity">
+    <select id="get" resultClass="com.sankuai.demo.entity.PeopleEntity">
         SELECT * FROM PEOPLE
         WHERE Id = #id#;
     </select>

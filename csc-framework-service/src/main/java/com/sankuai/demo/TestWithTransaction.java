@@ -1,4 +1,4 @@
-package com.dianping.demo;
+package com.sankuai.demo;
 
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.transaction.annotation.Transactional;
