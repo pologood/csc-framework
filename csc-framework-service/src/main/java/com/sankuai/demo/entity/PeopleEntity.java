@@ -1,6 +1,7 @@
 package com.sankuai.demo.entity;
 
 import com.dianping.csc.common.service.entity.Entity;
+import com.dianping.csc.common.service.util.DaoCodeGenerate;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -15,21 +16,7 @@ public class PeopleEntity extends Entity implements Serializable {
     private String sex;
     private Integer memo;
 
-    public PeopleEntity(String name, String sex, Integer memo) {
-        this.name = name;
-        this.sex = sex;
-        this.memo = memo;
-    }
-
-    public PeopleEntity() {
-    }
-
-    @Override
-    public String toString() {
-        return "PeopleEntity{" +
-                "name='" + name + '\'' +
-                ", sex='" + sex + '\'' +
-                ", memo=" + memo +
-                '}';
+    public static void main(String[] args) {
+        DaoCodeGenerate.generateByJavaBean(PeopleEntity.class);
     }
 }

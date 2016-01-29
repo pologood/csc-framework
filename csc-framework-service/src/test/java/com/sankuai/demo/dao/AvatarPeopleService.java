@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  * Created by csophys on 15/5/15.
  */
 
-
+@Deprecated
 public class AvatarPeopleService extends SpringBaseWithCustomizeRunnerTest {
 
     @Resource
@@ -25,7 +25,7 @@ public class AvatarPeopleService extends SpringBaseWithCustomizeRunnerTest {
      */
     @Test
     public void add() {
-        Integer result = AvatarPeopleDao.insert(new PeopleEntity("csophys", "男", 42));
+        Integer result = AvatarPeopleDao.insert(new PeopleEntity());
         Assert.assertTrue(result > 0);
         System.out.println("rollback " + result);
     }
@@ -36,7 +36,7 @@ public class AvatarPeopleService extends SpringBaseWithCustomizeRunnerTest {
     @Test
     @Rollback(false)
     public void addWithouRollback() {
-        Integer result = AvatarPeopleDao.insert(new PeopleEntity("csophys", "男", 42));
+        Integer result = AvatarPeopleDao.insert(new PeopleEntity());
         Assert.assertTrue(result > 0);
         System.out.println("nonRollback:" + result);
     }
