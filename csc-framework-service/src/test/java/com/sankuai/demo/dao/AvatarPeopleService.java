@@ -15,19 +15,19 @@ import javax.annotation.Resource;
  */
 
 
-public class PeopleService extends SpringBaseWithCustomizeRunnerTest {
+public class AvatarPeopleService extends SpringBaseWithCustomizeRunnerTest {
 
     @Resource
-    PeopleDao peopleDao;
+    AvatarPeopleDao AvatarPeopleDao;
 
     /**
      * 默认开启事务自动回滚
      */
     @Test
     public void add() {
-        Integer result = peopleDao.insert(new PeopleEntity("csophys", "男", 42));
+        Integer result = AvatarPeopleDao.insert(new PeopleEntity("csophys", "男", 42));
         Assert.assertTrue(result > 0);
-        System.out.println("rollback "+result);
+        System.out.println("rollback " + result);
     }
 
     /**
@@ -36,9 +36,9 @@ public class PeopleService extends SpringBaseWithCustomizeRunnerTest {
     @Test
     @Rollback(false)
     public void addWithouRollback() {
-        Integer result = peopleDao.insert(new PeopleEntity("csophys", "男", 42));
+        Integer result = AvatarPeopleDao.insert(new PeopleEntity("csophys", "男", 42));
         Assert.assertTrue(result > 0);
-        System.out.println("nonRollback:"+result);
+        System.out.println("nonRollback:" + result);
     }
 
     @BeforeTransaction

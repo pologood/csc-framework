@@ -2,6 +2,7 @@ package com.sankuai.demo.service.impl;
 
 import com.dianping.csc.common.service.util.SpringBaseWithCustomizeRunnerTest;
 import com.sankuai.demo.service.HelloService;
+import org.junit.Assert;
 import org.junit.Test;
 
 import javax.annotation.Resource;
@@ -13,6 +14,6 @@ public class HelloServiceImpTest extends SpringBaseWithCustomizeRunnerTest {
 
     @Test
     public void testHello() throws Exception {
-        helloService.hello("csophys");
+        Assert.assertTrue(helloService.hello("csophys").contains(HelloServiceImp.PREFIX));;
     }
 }
