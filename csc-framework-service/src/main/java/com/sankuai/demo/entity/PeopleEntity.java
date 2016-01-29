@@ -23,4 +23,13 @@ public class PeopleEntity extends Entity implements Serializable {
 
     public PeopleEntity() {
     }
+
+    @Override
+    public String toString() {
+        return "PeopleEntity{" +
+                "name='" + name + '\'' +
+                ", sex='" + sex + '\'' +
+                ", memo=" + memo +
+                '}';
+    }
 }
