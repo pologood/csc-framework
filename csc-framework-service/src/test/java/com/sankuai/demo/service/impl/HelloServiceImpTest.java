@@ -1,6 +1,7 @@
 package com.sankuai.demo.service.impl;
 
 import com.dianping.csc.common.service.util.SpringBaseWithCustomizeRunnerTest;
+import com.dianping.lion.client.Lion;
 import com.sankuai.demo.service.HelloService;
 import org.junit.Assert;
 import org.junit.Test;
