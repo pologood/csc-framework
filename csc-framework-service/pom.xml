@@ -12,7 +12,7 @@
 
     <properties>
         <env>qa</env>
-        <csc-common-service.version>2.3.0-SNAPSHOT</csc-common-service.version>
+        <csc-common-service.version>2.3.1</csc-common-service.version>
     </properties>
 
     <dependencies>
